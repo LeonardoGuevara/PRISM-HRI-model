@@ -1,0 +1,9 @@
+// HI-2: Probability that SCS works well after collision
+Pmax=? [ F (flag_task_finished=false&x_human_distance=5&x_scs=1) ]
+
+// HI-3 Probability that SCS does not work well after collision
+Pmax=? [ F (flag_task_finished=false&x_human_distance=5&x_scs=2) ]
+
+// HI-1 Probability that the robot is still working when d<7m durin UVC treatment
+Pmax=? [ F flag_task_finished=false&x_human_distance>=2&x_robot!=10&x_uvc=2 ]
+
